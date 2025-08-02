@@ -15,9 +15,9 @@ export default function Home() {
       <section id="portfolio" className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-pixel-dark mb-4">Featured Projects</h2>
+            <h2 className="text-4xl font-bold text-pixel-dark mb-4">Featured Work</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              A collection of my latest work spanning web development, digital art, and creative coding projects.
+              Highlights from my experience building content strategies for AI/ML platforms and growing technical communities to millions of users.
             </p>
           </div>
 
@@ -37,9 +37,9 @@ export default function Home() {
       <section id="blog" className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-pixel-dark mb-4">Latest Blog Posts</h2>
+            <h2 className="text-4xl font-bold text-pixel-dark mb-4">Latest Articles</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Thoughts on design, development, and the intersection of technology and creativity.
+              Deep dives into AI/ML research, content strategy insights, and making cutting-edge technology accessible.
             </p>
           </div>
 

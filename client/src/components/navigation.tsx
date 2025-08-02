@@ -28,7 +28,7 @@ export default function Navigation() {
           <div className="flex-shrink-0">
             <Link href="/">
               <h1 className="text-2xl font-bold text-pixel-pink cursor-pointer">
-                Val<span className="text-pixel-teal">.</span>
+                Valeria<span className="text-pixel-teal">.</span>
               </h1>
             </Link>
           </div>

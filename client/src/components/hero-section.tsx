@@ -17,11 +17,11 @@ export default function HeroSection() {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-6xl font-bold text-pixel-dark leading-tight">
-                Hi, I'm <span className="text-pixel-pink">Val</span>
-                <span className="block text-pixel-teal">Digital Creative</span>
+                Hi, I'm <span className="text-pixel-pink">Valeria</span>
+                <span className="block text-pixel-teal">AI/ML Content Strategist</span>
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed">
-                I create digital experiences that blend technology with creativity. From pixel art to modern web applications, I bring ideas to life through code and design.
+                I turn cutting-edge AI/ML research into clear, practical guides that help people learn. With 4+ years of experience growing content platforms to 3M+ users, I bridge complex technical concepts and practical understanding.
               </p>
             </div>
 

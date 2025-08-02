@@ -146,7 +146,7 @@ export default function ContactForm() {
             </div>
             <div>
               <h4 className="font-semibold text-pixel-dark mb-1">Email</h4>
-              <p className="text-gray-600">hello@val.dev</p>
+              <p className="text-gray-600">kavaivaleri@gmail.com</p>
             </div>
           </div>
 
@@ -156,7 +156,7 @@ export default function ContactForm() {
             </div>
             <div>
               <h4 className="font-semibold text-pixel-dark mb-1">Location</h4>
-              <p className="text-gray-600">San Francisco, CA</p>
+              <p className="text-gray-600">Remote</p>
             </div>
           </div>
 

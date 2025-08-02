@@ -1,12 +1,14 @@
-# Portfolio Website
+# Valeria Kuka - AI/ML Content Strategist Portfolio
 
 ## Overview
 
-This is a modern portfolio website built with React and TypeScript, featuring a full-stack architecture with Express.js backend. The site showcases projects, blog posts, and provides contact functionality. It uses a pixel art aesthetic with a custom design system and implements modern web development practices including server-side rendering, responsive design, and comprehensive UI components.
+This is a professional portfolio website for Valeria Kuka, an AI/ML Content Strategist and Technical Writer. Built with React and TypeScript, featuring a full-stack architecture with Express.js backend. The site showcases her content strategy work, technical writing portfolio, and provides contact functionality for potential clients. It uses a pixel art aesthetic with a custom design system while maintaining professional credibility.
 
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
+Focus: AI/ML content strategy, technical writing, community building
+Target audience: Potential clients, AI/ML community, recruiters
 
 ## System Architecture
 

@@ -7,10 +7,10 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-2">
-            <h3 className="text-2xl font-bold text-pixel-pink mb-4">Val.</h3>
+            <h3 className="text-2xl font-bold text-pixel-pink mb-4">Valeria.</h3>
             <p className="text-gray-300 max-w-md mb-6">
-              Digital creative passionate about blending technology with art. 
-              Creating pixel-perfect experiences one project at a time.
+              AI/ML Content Strategist passionate about making cutting-edge research accessible. 
+              Building bridges between complex technical concepts and practical understanding.
             </p>
             <div className="flex space-x-4">
               <a
@@ -85,17 +85,17 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-white mb-4">Services</h4>
             <ul className="space-y-2">
-              <li><span className="text-gray-300">Web Development</span></li>
-              <li><span className="text-gray-300">UI/UX Design</span></li>
-              <li><span className="text-gray-300">Pixel Art</span></li>
-              <li><span className="text-gray-300">Creative Coding</span></li>
+              <li><span className="text-gray-300">Technical Writing</span></li>
+              <li><span className="text-gray-300">Content Strategy</span></li>
+              <li><span className="text-gray-300">AI/ML Research</span></li>
+              <li><span className="text-gray-300">Community Building</span></li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-gray-600 mt-8 pt-8 text-center">
           <p className="text-gray-400">
-            © 2024 Val. All rights reserved. Built with love and lots of pixels.
+            © 2024 Valeria Kuka. All rights reserved. Built with love and lots of pixels.
           </p>
         </div>
       </div>

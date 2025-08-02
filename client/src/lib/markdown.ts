@@ -19,7 +19,7 @@ export function parseMarkdown(content: string): string {
 
   // Convert unordered lists
   html = html.replace(/^\- (.+)$/gm, '<li class="mb-1">$1</li>');
-  html = html.replace(/(<li class="mb-1">.*<\/li>)/gs, '<ul class="mb-4 list-disc list-inside space-y-2">$1</ul>');
+  html = html.replace(/(<li class="mb-1">.*<\/li>)/g, '<ul class="mb-4 list-disc list-inside space-y-2">$1</ul>');
 
   // Convert ordered lists
   html = html.replace(/^\d+\. (.+)$/gm, '<li class="mb-1">$1</li>');

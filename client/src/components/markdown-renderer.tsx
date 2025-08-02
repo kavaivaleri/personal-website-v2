@@ -23,7 +23,7 @@ export default function MarkdownRenderer({ content }: MarkdownRendererProps) {
     
     // Convert lists
     text = text.replace(/^\- (.*$)/gm, '<li>$1</li>');
-    text = text.replace(/(<li>.*<\/li>)/s, '<ul>$1</ul>');
+    text = text.replace(/(<li>.*<\/li>)/, '<ul>$1</ul>');
     
     // Convert paragraphs
     text = text.replace(/\n\n/g, '</p><p>');
