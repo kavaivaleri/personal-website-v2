@@ -1,0 +1,141 @@
+cv
+This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
+
+Basics
+Name	Valeria Kuka
+Label	Technical Writer & Content Manager
+Email	kavaivaleri@gmail.com
+Summary	Experienced technical writer and content manager specializing in AI/ML, social media marketing, and community building.
+Work
+2024.08 - 2025.04
+Head of Content
+Learn Prompting
+Led content strategy for a platform with 3M+ users
+Owned documentation (Prompt Engineering Guide), blog, newsletter, and social channels
+Grew (in 9 months) organic users +98%, sessions +65%, average engagement +25-45 pp on the website
+Launched weekly newsletter achieving 35-40% open rate and 4-6% CTR
+Grew Twitter (+12%) and LinkedIn (+75%)
+Achieved all-time-high traffic to /courses/ in March 2025
+Led a team of 3-5 freelance writers and contributed to docs, blog, and newsletter
+Authored contributor and SEO handbooks, reducing writer onboarding time
+Launched series on hands-on guides (GPT-4o Image Gen, ElevenLabs, Perplexity, NotebookLM)
+2023.04 - Present
+Newsletter Editor
+DataTalks.Club
+Own end-to-end newsletter production
+Partner with sponsors to develop effective promotional content
+2023.02 - 2024.06
+Contributing Editor
+TuringPost
+Led social media strategy and contributed to content for AI/ML newsletter
+Established social media as the third-largest subscriber acquisition channel
+Drove Twitter growth from 46K to 60K followers (+30%) and LinkedIn from 2.6K to 4.6K (+76%)
+Wrote technical explainers driving 30% of premium conversions
+Authored in-depth coverage of AI technologies including Transformers, RAG, and LLMs
+Contributed to detailed profiles of AI unicorns like Databricks, Scale AI, Zhipu AI, Moonshot AI, xAI
+Mentored new intern to full autonomy in 1 month through structured onboarding; led weekly social strategy reviews
+Content regularly shared by leading organizations including Stanford NLP, Amazon Research, and Hugging Face
+2023.01 - 2023.04
+Content Manager
+DataTalks.Club
+Led social media strategy, introducing carousels and structured recurring posts
+Grew LinkedIn from 11K to 15K followers (+31%) in 4 months
+Improved engagement metrics: CTR (1.99% to 6.18%), rate (2.92% to 7.65%)
+Increased post performance: impressions (+56%), clicks (+557%), likes (+133%)
+Attracted 5,000 MLOps course sign-ups in 1.5 months through influencer partnerships
+Designed newsletter template and social media asset system in Figma
+Developed course promotion strategy across LinkedIn, Facebook, and owned channels
+Created compelling Q&A and promotional content for course launch
+2021.01 - 2023.02
+Social Media Marketing Specialist
+TheSequence
+TheSequence is an ML community media, trusted by over 150,000+ specialists from all over the world, including the top AI labs, and hundreds of large enterprises.
+Owned end-to-end social media strategy and content creation for Twitter and LinkedIn
+Grew Twitter from 500 to 46K followers (92x growth) and LinkedIn from 0 to 2.6K followers
+Developed data-driven content strategy using weekly KPI analysis and performance tracking
+Established partnerships with AI/ML communities and companies to expand reach
+Created and tested various content formats based on competitor research and audience engagement
+Monitored industry trends to maintain relevant and timely content across platforms
+2020.02 - 2021.07
+Research Assistant at the International Laboratory of Game Theory and Decision Making
+National Research University — Higher School of Economics
+International Laboratory of Game Theory and Decision Making is a research group regularly published in renowned academic journals.
+Contributed to Python class development simulating group preferences across statistical cultures to analyze manipulation effects in voting theory for bachelor's thesis research
+Worked on research project under supervisor who received Russian Science Foundation Grant (1 of 300 grants in Russia, 1 of 3 at university)
+Presented findings at GTM2020, GTM2021, and other international conferences
+Received 2nd place award for bachelor's thesis at HSE Student Research Competition
+2019.09 - 2019.12
+Teaching Assistant on Mathematical Optimization
+National Research University — Higher School of Economics
+Teaching Assistant on Mathematical Optimization course
+Led bi-weekly review sessions and Q&A consultations for 90+ students on advanced optimization concepts
+Developed comprehensive study guides and practice problems for mid-term and final examinations
+Education
+2017 - 2021
+Bachelor's degree
+Higher School of Economics
+Econometrics and Quantitative Economics
+Microeconomics
+Macroeconomics
+Game Theory
+Industrial Organization
+Linear Algebra
+Calculus
+Probability Theory
+Statistics & Econometrics
+Machine Learning
+Two-Sided Markets and Digital Platforms
+Volunteer
+2020.12 - 2020.12
+Conference Volunteer
+Peking University
+Supported The 16th Conference on Web and Internet Economics
+Managed technical setup and testing of speakers' broadcasting environments
+Facilitated Q&A sessions between presenters and conference attendees
+2019.11 - 2021.09
+Co-Editor-in-Chief
+Nota Bene Journal
+Led student-run publication focused on research and study abroad opportunities at HSE University
+Led project covering work and life in 10+ research and education laboratories
+Managed 5 cross-functional teams (20+ members) including interviewers, editors, and content creators
+Organized alumni panels featuring graduates studying in Russia, Italy, Spain, France, and Germany
+Conducted thesis preparation workshops connecting senior and junior students
+Edited 30+ stories including interviews, original content, and research reports
+Interviewed prominent academics including Eric Maskin and Hervé Moulin
+Created content including thesis-related articles and social media communications
+2019.09 - 2020.09
+Guide
+The F.M.Dostoevsky Literary-Memorial Museum
+Volunteered as guide for special museum events
+Conducted literary exhibition tours during the Night of Museums event
+Coordinated visitor-guide assignments during major museum events
+Led guided walking tours in Saint Petersburg for Dostoevsky Day celebrations
+2019.07 - 2019.07
+Media Specialist
+International Economics Olympiad
+Served on media team for international academic competition
+Developed and executed media plan for event coverage
+Created content and conducted interviews for the official website
+Managed real-time event documentation and reporting
+2017.11 - 2019.09
+Editorial Intern
+Nota Bene Journal
+Supported editorial operations of student-run publication
+Transcribed and edited interviews and original content
+Created social media content to promote journal materials
+Assisted with editorial review process
+Languages
+English
+Fluent
+Russian
+Native
+French
+Basic
+Interests
+Professional Interests
+Technical Writing
+Content Management
+AI/ML
+Data Science
+Social Media Marketing
+Community Building
