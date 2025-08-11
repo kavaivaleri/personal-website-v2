@@ -62,3 +62,26 @@ export type BlogPost = typeof blogPosts.$inferSelect;
 
 export type InsertContact = z.infer<typeof insertContactSchema>;
 export type Contact = typeof contacts.$inferSelect;
+
+// Publications table
+export const publications = pgTable("publications", {
+  id: varchar("id").primaryKey().default(sql`gen_random_uuid()`),
+  title: text("title").notNull(),
+  description: text("description").notNull(),
+  url: text("url").notNull(),
+  publication: text("publication").notNull(), // e.g., "TuringPost", "Learn Prompting"
+  category: text("category").notNull(), // e.g., "Technical Writing", "AI/ML"
+  tags: json("tags").$type<string[]>().notNull(),
+  publishedAt: timestamp("published_at").notNull(),
+  featured: text("featured").default("false"), // "true" or "false"
+  readTime: text("read_time"),
+  createdAt: timestamp("created_at").defaultNow(),
+});
+
+export const insertPublicationSchema = createInsertSchema(publications).omit({
+  id: true,
+  createdAt: true,
+});
+
+export type InsertPublication = z.infer<typeof insertPublicationSchema>;
+export type Publication = typeof publications.$inferSelect;

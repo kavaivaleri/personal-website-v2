@@ -10,6 +10,7 @@ import Portfolio from "@/pages/portfolio";
 import ProjectDetail from "@/pages/project-detail";
 import Blog from "@/pages/blog";
 import BlogPost from "@/pages/blog-post";
+import Publications from "@/pages/publications";
 import Contact from "@/pages/contact";
 import NotFound from "@/pages/not-found";
 
@@ -21,6 +22,7 @@ function Router() {
       <Route path="/project/:id" component={ProjectDetail} />
       <Route path="/blog" component={Blog} />
       <Route path="/blog/:slug" component={BlogPost} />
+      <Route path="/publications" component={Publications} />
       <Route path="/contact" component={Contact} />
       <Route component={NotFound} />
     </Switch>

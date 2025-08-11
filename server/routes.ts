@@ -48,6 +48,59 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  // Publications routes
+  app.get("/api/publications", async (req, res) => {
+    try {
+      const publications = await storage.getPublications();
+      res.json(publications);
+    } catch (error) {
+      res.status(500).json({ message: "Failed to fetch publications" });
+    }
+  });
+
+  app.get("/api/publications/featured", async (req, res) => {
+    try {
+      const publications = await storage.getFeaturedPublications();
+      res.json(publications);
+    } catch (error) {
+      res.status(500).json({ message: "Failed to fetch featured publications" });
+    }
+  });
+
+  app.get("/api/publications/:id", async (req, res) => {
+    try {
+      const publication = await storage.getPublication(req.params.id);
+      if (!publication) {
+        return res.status(404).json({ message: "Publication not found" });
+      }
+      res.json(publication);
+    } catch (error) {
+      res.status(500).json({ message: "Failed to fetch publication" });
+    }
+  });
+
+  app.get("/api/publications/category/:category", async (req, res) => {
+    try {
+      const publications = await storage.getPublicationsByCategory(req.params.category);
+      res.json(publications);
+    } catch (error) {
+      res.status(500).json({ message: "Failed to fetch publications by category" });
+    }
+  });
+
+  app.get("/api/publications/search", async (req, res) => {
+    try {
+      const query = req.query.q as string;
+      if (!query) {
+        return res.status(400).json({ message: "Query parameter 'q' is required" });
+      }
+      const publications = await storage.searchPublications(query);
+      res.json(publications);
+    } catch (error) {
+      res.status(500).json({ message: "Failed to search publications" });
+    }
+  });
+
   // Blog posts routes
   app.get("/api/blog-posts", async (req, res) => {
     try {

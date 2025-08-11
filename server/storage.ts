@@ -1,7 +1,8 @@
-import { type Project, type InsertProject, type BlogPost, type InsertBlogPost, type Contact, type InsertContact } from "@shared/schema";
+import { type Project, type InsertProject, type BlogPost, type InsertBlogPost, type Contact, type InsertContact, type Publication, type InsertPublication } from "@shared/schema";
 import { randomUUID } from "crypto";
 import { blogReader } from "./blog-reader";
 import { contentReader } from "./content-reader";
+import { publicationsReader } from "./publications-reader";
 
 export interface IStorage {
   // Projects
@@ -21,17 +22,26 @@ export interface IStorage {
   // Contacts
   createContact(contact: InsertContact): Promise<Contact>;
   getContacts(): Promise<Contact[]>;
+
+  // Publications
+  getPublications(): Promise<Publication[]>;
+  getPublication(id: string): Promise<Publication | undefined>;
+  getFeaturedPublications(): Promise<Publication[]>;
+  getPublicationsByCategory(category: string): Promise<Publication[]>;
+  searchPublications(query: string): Promise<Publication[]>;
 }
 
 export class MemStorage implements IStorage {
   private projects: Map<string, Project>;
   private blogPosts: Map<string, BlogPost>;
   private contacts: Map<string, Contact>;
+  private publications: Map<string, Publication>;
 
   constructor() {
     this.projects = new Map();
     this.blogPosts = new Map();
     this.contacts = new Map();
+    this.publications = new Map();
     
     // Initialize with sample data
     this.initializeData();
@@ -201,6 +211,27 @@ export class MemStorage implements IStorage {
     return Array.from(this.contacts.values()).sort((a, b) => 
       (b.createdAt?.getTime() || 0) - (a.createdAt?.getTime() || 0)
     );
+  }
+
+  // Publications - Reading from markdown files
+  async getPublications(): Promise<Publication[]> {
+    return publicationsReader.getAllPublications();
+  }
+
+  async getPublication(id: string): Promise<Publication | undefined> {
+    return publicationsReader.getPublication(id) || undefined;
+  }
+
+  async getFeaturedPublications(): Promise<Publication[]> {
+    return publicationsReader.getFeaturedPublications();
+  }
+
+  async getPublicationsByCategory(category: string): Promise<Publication[]> {
+    return publicationsReader.getPublicationsByCategory(category);
+  }
+
+  async searchPublications(query: string): Promise<Publication[]> {
+    return publicationsReader.searchPublications(query);
   }
 }
 
