@@ -71,7 +71,6 @@ export const publications = pgTable("publications", {
   url: text("url").notNull(),
   publication: text("publication").notNull(), // e.g., "TuringPost", "Learn Prompting"
   category: text("category").notNull(), // e.g., "Technical Writing", "AI/ML"
-  tags: json("tags").$type<string[]>().notNull(),
   publishedAt: timestamp("published_at").notNull(),
   featured: text("featured").default("false"), // "true" or "false"
   readTime: text("read_time"),

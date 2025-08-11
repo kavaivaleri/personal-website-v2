@@ -5,7 +5,6 @@ url: "https://www.turingpost.com/p/zhipu"
 publication: "Turing Post"
 category: "Company Profile"
 publishedAt: "2024-05-10"
-tags: ["Company Profile", "China", "AI"]
 featured: true
 readTime: "10 min read"
 ---

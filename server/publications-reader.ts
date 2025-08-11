@@ -8,7 +8,6 @@ interface PublicationMetadata {
   url: string;
   publication: string;
   category: string;
-  tags: string[];
   publishedAt: string;
   featured: boolean;
   readTime?: string;
@@ -44,7 +43,6 @@ export class PublicationsReader {
         url: metadata.url,
         publication: metadata.publication,
         category: metadata.category,
-        tags: metadata.tags,
         publishedAt: new Date(metadata.publishedAt),
         featured: metadata.featured ? "true" : "false",
         readTime: metadata.readTime || null,
@@ -101,15 +99,7 @@ export class PublicationsReader {
           case 'category':
             metadata.category = value;
             break;
-          case 'tags':
-            // Parse array format: ["tag1", "tag2", "tag3"]
-            if (value.startsWith('[') && value.endsWith(']')) {
-              metadata.tags = value.slice(1, -1)
-                .split(',')
-                .map(tag => tag.trim().replace(/['"]/g, ''))
-                .filter(tag => tag.length > 0);
-            }
-            break;
+
           case 'publishedAt':
             metadata.publishedAt = value;
             break;
@@ -172,7 +162,7 @@ export class PublicationsReader {
       pub.title.toLowerCase().includes(lowerQuery) ||
       pub.description.toLowerCase().includes(lowerQuery) ||
       pub.publication.toLowerCase().includes(lowerQuery) ||
-      pub.tags.some(tag => tag.toLowerCase().includes(lowerQuery))
+      pub.category.toLowerCase().includes(lowerQuery)
     );
   }
 }

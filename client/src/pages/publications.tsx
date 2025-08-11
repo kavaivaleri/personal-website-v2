@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { useState } from "react";
-import { ExternalLink, Search, Calendar, Tag, Building2 } from "lucide-react";
+import { ExternalLink, Search, Calendar, Building2 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -231,14 +231,7 @@ function PublicationCard({ publication }: { publication: Publication }) {
           )}
         </div>
 
-        {/* Tags */}
-        <div className="flex flex-wrap gap-2">
-          {publication.tags.map((tag) => (
-            <Badge key={tag} variant="secondary" className="text-xs">
-              {tag}
-            </Badge>
-          ))}
-        </div>
+
 
         {/* Category and Date */}
         <div className="flex items-center justify-between text-sm text-muted-foreground pt-2 border-t">
