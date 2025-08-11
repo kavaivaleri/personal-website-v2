@@ -13,8 +13,6 @@ endDate: "2023-02-01"
 
 # TheSequence Community Growth
 
-ABCDEFG
-
 Led social media strategy for TheSequence, an ML community trusted by 150,000+ specialists from top AI labs and enterprises.
 
 ## Explosive Growth
