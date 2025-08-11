@@ -1,5 +1,6 @@
 import { type Project, type InsertProject, type BlogPost, type InsertBlogPost, type Contact, type InsertContact } from "@shared/schema";
 import { randomUUID } from "crypto";
+import { blogReader } from "./blog-reader";
 
 export interface IStorage {
   // Projects
@@ -149,25 +150,21 @@ export class MemStorage implements IStorage {
     return project;
   }
 
-  // Blog Posts
+  // Blog Posts - Now reading from markdown files
   async getBlogPosts(): Promise<BlogPost[]> {
-    return Array.from(this.blogPosts.values()).sort((a, b) => 
-      (b.publishedAt?.getTime() || 0) - (a.publishedAt?.getTime() || 0)
-    );
+    return blogReader.getAllBlogPosts();
   }
 
   async getBlogPost(id: string): Promise<BlogPost | undefined> {
-    return this.blogPosts.get(id);
+    return blogReader.getBlogPost(id) || undefined;
   }
 
   async getBlogPostBySlug(slug: string): Promise<BlogPost | undefined> {
-    return Array.from(this.blogPosts.values()).find(post => post.slug === slug);
+    return blogReader.getBlogPostBySlug(slug) || undefined;
   }
 
   async getPublishedBlogPosts(): Promise<BlogPost[]> {
-    return Array.from(this.blogPosts.values())
-      .filter(post => post.published === "true")
-      .sort((a, b) => (b.publishedAt?.getTime() || 0) - (a.publishedAt?.getTime() || 0));
+    return blogReader.getPublishedBlogPosts();
   }
 
   async createBlogPost(insertPost: InsertBlogPost): Promise<BlogPost> {
@@ -184,16 +181,7 @@ export class MemStorage implements IStorage {
   }
 
   async searchBlogPosts(query: string): Promise<BlogPost[]> {
-    const lowerQuery = query.toLowerCase();
-    return Array.from(this.blogPosts.values())
-      .filter(post => 
-        post.published === "true" && (
-          post.title.toLowerCase().includes(lowerQuery) ||
-          post.excerpt.toLowerCase().includes(lowerQuery) ||
-          post.tags.some(tag => tag.toLowerCase().includes(lowerQuery))
-        )
-      )
-      .sort((a, b) => (b.publishedAt?.getTime() || 0) - (a.publishedAt?.getTime() || 0));
+    return blogReader.searchBlogPosts(query);
   }
 
   // Contacts
