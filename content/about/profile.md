@@ -1,0 +1,36 @@
+---
+name: "Valeria Kuka"
+title: "AI/ML Content Strategist & Technical Writer"
+email: "kavaivaleri@gmail.com"
+location: "Remote"
+linkedin: "https://linkedin.com/in/valeria-kuka"
+twitter: "https://twitter.com/valeria_kuka"
+---
+
+# About Valeria
+
+I'm a technical writer and content manager specializing in AI/ML, passionate about turning cutting-edge research into clear, practical guides that help people learn. I love exploring complex tech and tracing where groundbreaking ideas come from.
+
+## Work Experience
+
+Over the past four years, I've grown from leading social media to developing comprehensive content strategies, seeing all content channels as one big system that creates cohesive narratives across platforms.
+
+For the past 2 years, I've been contributing pieces about cutting-edge AI/ML topics like Retrieval-Augmented Generation (RAG), Chain-of-Thought (CoT) and various prompting techniques, Mamba, Mixture-of-Experts (MoE), and Joint Embedding Predictive Architecture (JEPA). My JEPA article was honored to receive positive feedback from JEPA's creator, Yann LeCun!
+
+I've also contributed to AI unicorn profiles and historical series about AI and LLMs specifically. I believe this historical perspective is crucial because we're building on the legacy of past innovations.
+
+Throughout my career, I've developed technical and research-focused social media channels (Twitter and LinkedIn), earning reposts from Stanford NLP, Amazon Research, Hugging Face, and AI researchers.
+
+## Education
+
+My B.Sc. in Econometrics and Quantitative Economics from Higher School of Economics gave me a solid foundation in Calculus, Linear Algebra, Probability and Statistics, and Machine Learning.
+
+## Beyond Tech
+
+Outside AI/ML publishing, I've:
+
+- Volunteered at online research conferences
+- Guided museum tours about Dostoevski in Saint Petersburg
+- Coordinated editorial teams at a media platform about science and studying abroad, successfully hosting Nobel Prize laureates and distinguished researchers as contributors
+
+I believe in building bridges between complex technical concepts and practical understanding, always striving to make AI/ML more accessible to everyone.

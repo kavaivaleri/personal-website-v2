@@ -37,6 +37,17 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  // About route
+  app.get("/api/about", async (req, res) => {
+    try {
+      const { contentReader } = await import("./content-reader");
+      const aboutInfo = contentReader.getAboutInfo();
+      res.json(aboutInfo);
+    } catch (error) {
+      res.status(500).json({ message: "Failed to fetch about information" });
+    }
+  });
+
   // Blog posts routes
   app.get("/api/blog-posts", async (req, res) => {
     try {

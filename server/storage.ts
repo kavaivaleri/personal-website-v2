@@ -1,6 +1,7 @@
 import { type Project, type InsertProject, type BlogPost, type InsertBlogPost, type Contact, type InsertContact } from "@shared/schema";
 import { randomUUID } from "crypto";
 import { blogReader } from "./blog-reader";
+import { contentReader } from "./content-reader";
 
 export interface IStorage {
   // Projects
@@ -125,17 +126,17 @@ export class MemStorage implements IStorage {
     sampleBlogPosts.forEach(post => this.blogPosts.set(post.id, post));
   }
 
-  // Projects
+  // Projects - Now reading from markdown files
   async getProjects(): Promise<Project[]> {
-    return Array.from(this.projects.values());
+    return contentReader.getAllProjects();
   }
 
   async getProject(id: string): Promise<Project | undefined> {
-    return this.projects.get(id);
+    return contentReader.getProject(id) || undefined;
   }
 
   async getFeaturedProjects(): Promise<Project[]> {
-    return Array.from(this.projects.values()).filter(project => project.featured === "true");
+    return contentReader.getFeaturedProjects();
   }
 
   async createProject(insertProject: InsertProject): Promise<Project> {
