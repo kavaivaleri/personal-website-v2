@@ -11,20 +11,25 @@ export default function Publications() {
   
   const { data: publications = [], isLoading } = useQuery<Publication[]>({
     queryKey: ["/api/publications"],
-  });
-
-  const { data: searchResults = [], isLoading: isSearching } = useQuery<Publication[]>({
-    queryKey: ["/api/publications/search", searchQuery],
     queryFn: async () => {
-      if (!searchQuery.trim()) return [];
-      const response = await fetch(`/api/publications/search?q=${encodeURIComponent(searchQuery)}`);
-      if (!response.ok) throw new Error("Failed to search");
+      const response = await fetch('/api/publications.json');
+      if (!response.ok) throw new Error("Failed to fetch publications");
       return response.json();
     },
-    enabled: !!searchQuery.trim(),
   });
 
-  const displayedPublications = searchQuery.trim() ? searchResults : publications;
+  // Client-side search
+  const displayedPublications = searchQuery.trim() 
+    ? publications.filter(pub => {
+        const lowerQuery = searchQuery.toLowerCase();
+        return (
+          pub.title.toLowerCase().includes(lowerQuery) ||
+          pub.description.toLowerCase().includes(lowerQuery) ||
+          pub.publication.toLowerCase().includes(lowerQuery) ||
+          pub.category.toLowerCase().includes(lowerQuery)
+        );
+      })
+    : publications;
 
   // Define custom category order
   const categoryOrder = [

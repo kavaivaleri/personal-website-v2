@@ -11,7 +11,7 @@ export default function BlogGrid({ limit }: BlogGridProps) {
   const { data: posts, isLoading } = useQuery<BlogPost[]>({
     queryKey: ["/api/blog-posts"],
     queryFn: async () => {
-      const response = await fetch('/api/blog-posts');
+      const response = await fetch('/api/blog-posts.json');
       if (!response.ok) throw new Error('Failed to fetch posts');
       return response.json();
     },

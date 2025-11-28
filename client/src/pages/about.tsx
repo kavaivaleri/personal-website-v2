@@ -18,7 +18,7 @@ interface AboutInfo {
 }
 
 async function fetchAboutInfo(): Promise<AboutInfo> {
-  const response = await fetch("/api/about");
+  const response = await fetch("/api/about.json");
   if (!response.ok) {
     throw new Error("Failed to fetch about information");
   }

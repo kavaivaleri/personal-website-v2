@@ -1,0 +1,19 @@
+{
+  "id": "how-i-started-learning-how-websites-work-and-how-ai-helped",
+  "title": "How I Started Learning How Websites Work (And How AI Helped)",
+  "slug": "how-i-started-learning-how-websites-work-and-how-ai-helped",
+  "excerpt": "As a content manager, I discovered that understanding how websites actually work transformed my work—and AI tools like Cursor became my gateway to learning the technical side of content management.",
+  "content": "When I joined Learn Prompting, the onboarding wasn't the usual \"upload content into a CMS.\"\n\nI had to learn GitHub, work directly with a Next.js codebase, and contribute articles through pull requests. For many marketers this setup feels intimidating — *\"too technical,\" \"not for me,\"* — but I was genuinely excited to dive in.\n\nEditing content inside a repo, pushing changes, understanding the folder structure, seeing how components work… it immediately clicked for me. It felt like a natural extension of working with technical material every day.\n\nOver time I started exploring the internals of the website on my own. Step by step. Small changes. Reading code. Breaking things and fixing them. Then one day Feddy introduced me to **Cursor** — and that changed everything.\n\nCursor became my sandbox for reverse-engineering how websites work:\n\n- Ask the AI to generate a change\n- Inspect what it touched\n- See how that impacted the final page\n- Learn the pattern\n- Apply it intentionally next time\n\nHalf a year later, this tool has fundamentally reshaped how I work. I've used it to implement SEO improvements, understand how components are wired together, and even write small scripts to automate technical SEO edits across multiple files. More about it in another post.\n\nFor some marketers, a \"GitHub + Next.js + AI-assisted reverse engineering\" workflow would be a hard no.\nFor me, it became one of the most interesting parts of the job — and now I'm applying the same skills in my current role to push things even further.",
+  "tags": [
+    "AI Tools",
+    "Learning",
+    "Content Strategy",
+    "Workflow",
+    "Career Development"
+  ],
+  "readTime": "2 min read",
+  "published": "true",
+  "publishedAt": "2025-11-28T00:00:00.000Z",
+  "imageUrl": "/images/blog/laptop.png",
+  "createdAt": "2025-11-28T00:00:00.000Z"
+}
