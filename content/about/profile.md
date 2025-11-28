@@ -1,36 +1,33 @@
 ---
 name: "Valeria Kuka"
-title: "AI/ML Content Strategist & Technical Writer"
+title: "Content Manager & Technical Writer"
 email: "kavaivaleri@gmail.com"
 location: "Remote"
 linkedin: "https://linkedin.com/in/valeria-kuka"
 twitter: "https://twitter.com/valeria_kuka"
 ---
 
-# About Valeria
+# About
 
-I'm a technical writer and content manager specializing in AI/ML, passionate about turning cutting-edge research into clear, practical guides that help people learn. I love exploring complex tech and tracing where groundbreaking ideas come from.
+I'm a content manager and technical writer specializing in AI/ML. I develop content strategies and write technical content that makes complex topics more accessible.
 
-## Work Experience
+## Experience
 
-Over the past four years, I've grown from leading social media to developing comprehensive content strategies, seeing all content channels as one big system that creates cohesive narratives across platforms.
+Currently, I work as Content Manager at DataTalksClub, where I lead content strategy across social media, blog, and newsletters. Previously, I was Head of Content at Learn Prompting, where I managed the content strategy across documentation, blog, newsletter, and social media.
 
-For the past 2 years, I've been contributing pieces about cutting-edge AI/ML topics like Retrieval-Augmented Generation (RAG), Chain-of-Thought (CoT) and various prompting techniques, Mamba, Mixture-of-Experts (MoE), and Joint Embedding Predictive Architecture (JEPA). My JEPA article was honored to receive positive feedback from JEPA's creator, Yann LeCun!
+I've also worked as Contributing Editor at TuringPost, managing social media strategy and writing technical content about AI/ML topics including Transformers, RAG, and company profiles. Before that, I was Social Media Marketing Specialist at TheSequence.
 
-I've also contributed to AI unicorn profiles and historical series about AI and LLMs specifically. I believe this historical perspective is crucial because we're building on the legacy of past innovations.
+My technical writing covers topics like Retrieval-Augmented Generation (RAG), Chain-of-Thought prompting, and Joint Embedding Predictive Architecture (JEPA). My JEPA article received positive feedback from its creator, Yann LeCun.
 
-Throughout my career, I've developed technical and research-focused social media channels (Twitter and LinkedIn), earning reposts from Stanford NLP, Amazon Research, Hugging Face, and AI researchers.
+## Skills
+
+- Content strategy and planning
+- Technical writing and documentation
+- Social media management (Twitter/LinkedIn)
+- SEO and analytics
+- Newsletter management
+- Team coordination
 
 ## Education
 
-My B.Sc. in Econometrics and Quantitative Economics from Higher School of Economics gave me a solid foundation in Calculus, Linear Algebra, Probability and Statistics, and Machine Learning.
-
-## Beyond Tech
-
-Outside AI/ML publishing, I've:
-
-- Volunteered at online research conferences
-- Guided museum tours about Dostoevski in Saint Petersburg
-- Coordinated editorial teams at a media platform about science and studying abroad, successfully hosting Nobel Prize laureates and distinguished researchers as contributors
-
-I believe in building bridges between complex technical concepts and practical understanding, always striving to make AI/ML more accessible to everyone.
+B.Sc. in Econometrics and Quantitative Economics from Higher School of Economics, with coursework in Calculus, Linear Algebra, Probability and Statistics, and Machine Learning.

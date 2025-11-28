@@ -1,6 +1,7 @@
 import { readFileSync, readdirSync, existsSync } from 'fs';
 import { join } from 'path';
 import type { Publication } from '@shared/schema';
+import { imageExtractor } from './image-extractor.js';
 
 interface PublicationMetadata {
   title: string;
@@ -11,6 +12,7 @@ interface PublicationMetadata {
   publishedAt: string;
   featured: boolean;
   readTime?: string;
+  imageUrl?: string;
 }
 
 export class PublicationsReader {
@@ -20,7 +22,7 @@ export class PublicationsReader {
     this.contentPath = join(process.cwd(), 'content', 'publications');
   }
 
-  private parseMarkdownFile(filename: string): Publication | null {
+  private async parseMarkdownFile(filename: string): Promise<Publication | null> {
     try {
       const filePath = join(this.contentPath, filename);
       if (!existsSync(filePath)) {
@@ -36,6 +38,17 @@ export class PublicationsReader {
 
       const id = filename.replace('.md', '');
       
+      // Extract image from URL if no manual imageUrl is provided
+      let imageUrl = metadata.imageUrl || null;
+      if (!imageUrl && metadata.url) {
+        try {
+          const extractedImage = await imageExtractor.extractImageFromUrl(metadata.url);
+          imageUrl = extractedImage?.url || null;
+        } catch (error) {
+          console.warn(`Failed to extract image from ${metadata.url}:`, error);
+        }
+      }
+      
       return {
         id,
         title: metadata.title,
@@ -46,6 +59,7 @@ export class PublicationsReader {
         publishedAt: new Date(metadata.publishedAt),
         featured: metadata.featured ? "true" : "false",
         readTime: metadata.readTime || null,
+        imageUrl,
         createdAt: new Date(metadata.publishedAt),
       };
     } catch (error) {
@@ -99,7 +113,6 @@ export class PublicationsReader {
           case 'category':
             metadata.category = value;
             break;
-
           case 'publishedAt':
             metadata.publishedAt = value;
             break;
@@ -108,6 +121,9 @@ export class PublicationsReader {
             break;
           case 'readTime':
             metadata.readTime = value;
+            break;
+          case 'imageUrl':
+            metadata.imageUrl = value;
             break;
         }
       }
@@ -122,7 +138,7 @@ export class PublicationsReader {
     }
   }
 
-  getAllPublications(): Publication[] {
+  async getAllPublications(): Promise<Publication[]> {
     try {
       if (!existsSync(this.contentPath)) {
         return [];
@@ -131,8 +147,8 @@ export class PublicationsReader {
       const files = readdirSync(this.contentPath)
         .filter(file => file.endsWith('.md'));
 
-      const publications = files
-        .map(file => this.parseMarkdownFile(file))
+      const publicationPromises = files.map(file => this.parseMarkdownFile(file));
+      const publications = (await Promise.all(publicationPromises))
         .filter((publication): publication is Publication => publication !== null);
 
       return publications.sort((a, b) => 
@@ -144,21 +160,24 @@ export class PublicationsReader {
     }
   }
 
-  getPublication(id: string): Publication | null {
+  async getPublication(id: string): Promise<Publication | null> {
     return this.parseMarkdownFile(`${id}.md`);
   }
 
-  getFeaturedPublications(): Publication[] {
-    return this.getAllPublications().filter(pub => pub.featured === "true");
+  async getFeaturedPublications(): Promise<Publication[]> {
+    const publications = await this.getAllPublications();
+    return publications.filter(pub => pub.featured === "true");
   }
 
-  getPublicationsByCategory(category: string): Publication[] {
-    return this.getAllPublications().filter(pub => pub.category === category);
+  async getPublicationsByCategory(category: string): Promise<Publication[]> {
+    const publications = await this.getAllPublications();
+    return publications.filter(pub => pub.category === category);
   }
 
-  searchPublications(query: string): Publication[] {
+  async searchPublications(query: string): Promise<Publication[]> {
     const lowerQuery = query.toLowerCase();
-    return this.getAllPublications().filter(pub =>
+    const publications = await this.getAllPublications();
+    return publications.filter(pub =>
       pub.title.toLowerCase().includes(lowerQuery) ||
       pub.description.toLowerCase().includes(lowerQuery) ||
       pub.publication.toLowerCase().includes(lowerQuery) ||

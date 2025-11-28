@@ -15,7 +15,7 @@ publication: "Publication Name"
 category: "Article Category"
 tags: ["Tag1", "Tag2", "Tag3"]
 publishedAt: "2024-01-15"
-featured: true
+featured: false
 readTime: "8 min read"
 ---
 

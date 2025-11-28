@@ -30,14 +30,7 @@ export const blogPosts = pgTable("blog_posts", {
   createdAt: timestamp("created_at").defaultNow(),
 });
 
-export const contacts = pgTable("contacts", {
-  id: varchar("id").primaryKey().default(sql`gen_random_uuid()`),
-  name: text("name").notNull(),
-  email: text("email").notNull(),
-  subject: text("subject").notNull(),
-  message: text("message").notNull(),
-  createdAt: timestamp("created_at").defaultNow(),
-});
+
 
 export const insertProjectSchema = createInsertSchema(projects).omit({
   id: true,
@@ -49,19 +42,11 @@ export const insertBlogPostSchema = createInsertSchema(blogPosts).omit({
   createdAt: true,
 });
 
-export const insertContactSchema = createInsertSchema(contacts).omit({
-  id: true,
-  createdAt: true,
-});
-
 export type InsertProject = z.infer<typeof insertProjectSchema>;
 export type Project = typeof projects.$inferSelect;
 
 export type InsertBlogPost = z.infer<typeof insertBlogPostSchema>;
 export type BlogPost = typeof blogPosts.$inferSelect;
-
-export type InsertContact = z.infer<typeof insertContactSchema>;
-export type Contact = typeof contacts.$inferSelect;
 
 // Publications table
 export const publications = pgTable("publications", {
@@ -74,6 +59,7 @@ export const publications = pgTable("publications", {
   publishedAt: timestamp("published_at").notNull(),
   featured: text("featured").default("false"), // "true" or "false"
   readTime: text("read_time"),
+  imageUrl: text("image_url"), // Cover image URL
   createdAt: timestamp("created_at").defaultNow(),
 });
 

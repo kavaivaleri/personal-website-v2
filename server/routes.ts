@@ -1,7 +1,7 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
-import { insertContactSchema, insertBlogPostSchema } from "@shared/schema";
+import { insertBlogPostSchema } from "@shared/schema";
 import { z } from "zod";
 
 export async function registerRoutes(app: Express): Promise<Server> {
@@ -101,6 +101,28 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  // Extract image from URL
+  app.get("/api/extract-image", async (req, res) => {
+    try {
+      const url = req.query.url as string;
+      if (!url) {
+        return res.status(400).json({ message: "URL parameter is required" });
+      }
+
+      const { imageExtractor } = await import("./image-extractor");
+      const imageInfo = await imageExtractor.extractImageFromUrl(url);
+      
+      if (!imageInfo) {
+        return res.status(404).json({ message: "No image found for this URL" });
+      }
+
+      res.json(imageInfo);
+    } catch (error) {
+      console.error("Error extracting image:", error);
+      res.status(500).json({ message: "Failed to extract image from URL" });
+    }
+  });
+
   // Blog posts routes
   app.get("/api/blog-posts", async (req, res) => {
     try {
@@ -165,22 +187,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
-  // Contact routes
-  app.post("/api/contact", async (req, res) => {
-    try {
-      const validatedData = insertContactSchema.parse(req.body);
-      const contact = await storage.createContact(validatedData);
-      res.status(201).json({ message: "Message sent successfully", contact });
-    } catch (error) {
-      if (error instanceof z.ZodError) {
-        return res.status(400).json({ 
-          message: "Invalid form data", 
-          errors: error.errors 
-        });
-      }
-      res.status(500).json({ message: "Failed to send message" });
-    }
-  });
+
 
   const httpServer = createServer(app);
   return httpServer;

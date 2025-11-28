@@ -18,17 +18,17 @@ export default function HeroSection() {
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-6xl font-bold text-pixel-dark leading-tight">
                 Hi, I'm <span className="text-pixel-pink">Valeria</span>
-                <span className="block text-pixel-teal">AI/ML Content Strategist</span>
+                <span className="block text-pixel-teal">Content Manager & Technical Writer</span>
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed">
-                I turn cutting-edge AI/ML research into clear, practical guides that help people learn. With 4+ years of experience growing content platforms to 3M+ users, I bridge complex technical concepts and practical understanding.
+                I write technical content about AI/ML and manage content across social media, blogs, and newsletters.
               </p>
             </div>
 
             <div className="flex flex-wrap gap-4">
-              <Link href="/portfolio">
+              <Link href="/blog">
                 <Button className="bg-pixel-pink text-white px-8 py-3 font-semibold shadow-pixel hover:shadow-pixel-hover transform hover:-translate-x-1 hover:-translate-y-1 transition-all duration-200">
-                  View My Work
+                  Read My Writing
                 </Button>
               </Link>
               <Link href="/contact">

@@ -46,7 +46,7 @@ title: "Project Name"
 description: "Brief project description..."
 technologies: ["Tech1", "Tech2"]
 category: "Content Strategy"
-featured: true
+featured: false
 liveUrl: "https://project.com"
 githubUrl: "https://github.com/user/project"
 startDate: "2024-01-01"
@@ -102,7 +102,7 @@ linkedin: "https://linkedin.com/in/profile"
 1. Create `content/projects/your-project.md`
 2. Add project metadata in frontmatter
 3. Describe your project in Markdown
-4. Set `featured: true` to show on homepage
+4. Set `featured: false` to show on homepage
 
 ### Update Your Bio
 1. Edit `content/about/profile.md`

@@ -12,7 +12,7 @@ title: "Your Project Title"
 description: "Brief description of your project..."
 technologies: ["Tech1", "Tech2", "Tech3"]
 category: "Project Category"
-featured: true
+featured: false
 liveUrl: "https://your-project.com"
 githubUrl: "https://github.com/your-username/project"
 imageUrl: "/api/placeholder/600/400"

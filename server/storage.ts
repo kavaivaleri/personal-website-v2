@@ -1,4 +1,4 @@
-import { type Project, type InsertProject, type BlogPost, type InsertBlogPost, type Contact, type InsertContact, type Publication, type InsertPublication } from "@shared/schema";
+import { type Project, type InsertProject, type BlogPost, type InsertBlogPost, type Publication, type InsertPublication } from "@shared/schema";
 import { randomUUID } from "crypto";
 import { blogReader } from "./blog-reader";
 import { contentReader } from "./content-reader";
@@ -19,10 +19,6 @@ export interface IStorage {
   createBlogPost(post: InsertBlogPost): Promise<BlogPost>;
   searchBlogPosts(query: string): Promise<BlogPost[]>;
 
-  // Contacts
-  createContact(contact: InsertContact): Promise<Contact>;
-  getContacts(): Promise<Contact[]>;
-
   // Publications
   getPublications(): Promise<Publication[]>;
   getPublication(id: string): Promise<Publication | undefined>;
@@ -34,13 +30,11 @@ export interface IStorage {
 export class MemStorage implements IStorage {
   private projects: Map<string, Project>;
   private blogPosts: Map<string, BlogPost>;
-  private contacts: Map<string, Contact>;
   private publications: Map<string, Publication>;
 
   constructor() {
     this.projects = new Map();
     this.blogPosts = new Map();
-    this.contacts = new Map();
     this.publications = new Map();
     
     // Initialize with sample data
@@ -155,7 +149,11 @@ export class MemStorage implements IStorage {
       ...insertProject, 
       id, 
       createdAt: new Date(),
-      featured: insertProject.featured || "false"
+      featured: insertProject.featured || "false",
+      imageUrl: insertProject.imageUrl || null,
+      githubUrl: insertProject.githubUrl || null,
+      liveUrl: insertProject.liveUrl || null,
+      technologies: Array.isArray(insertProject.technologies) ? insertProject.technologies as string[] : []
     };
     this.projects.set(id, project);
     return project;
@@ -185,7 +183,8 @@ export class MemStorage implements IStorage {
       id, 
       createdAt: new Date(),
       publishedAt: new Date(),
-      published: insertPost.published || "true"
+      published: insertPost.published || "true",
+      tags: Array.isArray(insertPost.tags) ? insertPost.tags as string[] : []
     };
     this.blogPosts.set(id, post);
     return post;
@@ -195,43 +194,28 @@ export class MemStorage implements IStorage {
     return blogReader.searchBlogPosts(query);
   }
 
-  // Contacts
-  async createContact(insertContact: InsertContact): Promise<Contact> {
-    const id = randomUUID();
-    const contact: Contact = { 
-      ...insertContact, 
-      id, 
-      createdAt: new Date() 
-    };
-    this.contacts.set(id, contact);
-    return contact;
-  }
 
-  async getContacts(): Promise<Contact[]> {
-    return Array.from(this.contacts.values()).sort((a, b) => 
-      (b.createdAt?.getTime() || 0) - (a.createdAt?.getTime() || 0)
-    );
-  }
 
   // Publications - Reading from markdown files
   async getPublications(): Promise<Publication[]> {
-    return publicationsReader.getAllPublications();
+    return await publicationsReader.getAllPublications();
   }
 
   async getPublication(id: string): Promise<Publication | undefined> {
-    return publicationsReader.getPublication(id) || undefined;
+    const publication = await publicationsReader.getPublication(id);
+    return publication || undefined;
   }
 
   async getFeaturedPublications(): Promise<Publication[]> {
-    return publicationsReader.getFeaturedPublications();
+    return await publicationsReader.getFeaturedPublications();
   }
 
   async getPublicationsByCategory(category: string): Promise<Publication[]> {
-    return publicationsReader.getPublicationsByCategory(category);
+    return await publicationsReader.getPublicationsByCategory(category);
   }
 
   async searchPublications(query: string): Promise<Publication[]> {
-    return publicationsReader.searchPublications(query);
+    return await publicationsReader.searchPublications(query);
   }
 }
 

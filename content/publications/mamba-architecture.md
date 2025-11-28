@@ -1,12 +1,11 @@
 ---
 title: "Mamba: The State Space Model Challenging Transformers"
-description: "Deep dive into Mamba's architecture and how it addresses the computational limitations of transformer models."
+description: "Authored a deep dive into Mamba's architecture and how it addresses the computational limitations of transformer models."
 url: "https://turingpost.com/p/mamba"
-publication: "TuringPost"  
-category: "AI/ML Research"
-tags: ["Mamba", "State Space Models", "Transformers", "Efficiency"]
+publication: "Turing Post"  
+category: "Technical"
 publishedAt: "2023-12-10"
-featured: true
+featured: false
 readTime: "10 min read"
 ---
 

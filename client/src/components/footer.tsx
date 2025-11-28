@@ -9,8 +9,7 @@ export default function Footer() {
           <div className="col-span-2">
             <h3 className="text-2xl font-bold text-pixel-pink mb-4">Valeria.</h3>
             <p className="text-gray-300 max-w-md mb-6">
-              AI/ML Content Strategist passionate about making cutting-edge research accessible. 
-              Building bridges between complex technical concepts and practical understanding.
+              Content Manager and Technical Writer specializing in AI/ML. I write technical content and manage content strategy across social media, blogs, and newsletters.
             </p>
             <div className="flex space-x-4">
               <a
@@ -59,9 +58,9 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/portfolio">
+                <Link href="/about">
                   <a className="text-gray-300 hover:text-pixel-pink transition-colors duration-200">
-                    Portfolio
+                    About
                   </a>
                 </Link>
               </li>
@@ -69,6 +68,13 @@ export default function Footer() {
                 <Link href="/blog">
                   <a className="text-gray-300 hover:text-pixel-pink transition-colors duration-200">
                     Blog
+                  </a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/publications">
+                  <a className="text-gray-300 hover:text-pixel-pink transition-colors duration-200">
+                    Published Work
                   </a>
                 </Link>
               </li>
@@ -83,12 +89,12 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-white mb-4">Services</h4>
+            <h4 className="font-semibold text-white mb-4">What I Do</h4>
             <ul className="space-y-2">
               <li><span className="text-gray-300">Technical Writing</span></li>
               <li><span className="text-gray-300">Content Strategy</span></li>
-              <li><span className="text-gray-300">AI/ML Research</span></li>
-              <li><span className="text-gray-300">Community Building</span></li>
+              <li><span className="text-gray-300">Social Media</span></li>
+              <li><span className="text-gray-300">Newsletter Management</span></li>
             </ul>
           </div>
         </div>
