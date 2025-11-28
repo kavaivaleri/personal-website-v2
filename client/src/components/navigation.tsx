@@ -15,10 +15,9 @@ export default function Navigation() {
 
   const navItems = [
     { href: "/", label: "Home" },
-    { href: "/about", label: "About" },
-    { href: "/blog", label: "Blog" },
     { href: "/publications", label: "Published Work" },
-    { href: "/contact", label: "Contact" },
+    { href: "/blog", label: "Blog" },
+    { href: "/about", label: "About" },
   ];
 
   return (
@@ -29,7 +28,7 @@ export default function Navigation() {
           <div className="flex-shrink-0">
             <Link href="/">
               <h1 className="text-2xl font-bold text-pixel-pink cursor-pointer">
-                Valeria<span className="text-pixel-teal">.</span>
+                Valeriia<span className="text-pixel-teal">.</span>
               </h1>
             </Link>
           </div>

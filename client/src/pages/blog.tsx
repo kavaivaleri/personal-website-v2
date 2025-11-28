@@ -7,7 +7,7 @@ export default function Blog() {
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold text-pixel-dark mb-4">Blog</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            New articles and insights I'm writing on AI/ML and content strategy. Looking for my previous work? Check out <a href="/publications" className="text-pixel-teal hover:text-pixel-pink underline">Published Work</a>.
+            Personal insights and reflections. If you're looking for my previous work, published on other platforms, check out <a href="/publications" className="text-pixel-teal hover:text-pixel-pink underline">Published Work</a>.
           </p>
         </div>
 

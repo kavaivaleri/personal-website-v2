@@ -39,8 +39,20 @@ export default function Publications() {
     "Company Profile"
   ];
 
-  // Get featured articles
-  const featuredPublications = displayedPublications.filter(pub => pub.featured === "true");
+  // Get featured articles and sort by priority
+  const featuredPublications = displayedPublications
+    .filter(pub => pub.featured === "true")
+    .sort((a, b) => {
+      const priorityA = a.priority ? parseInt(a.priority, 10) : 999;
+      const priorityB = b.priority ? parseInt(b.priority, 10) : 999;
+      
+      if (priorityA !== priorityB) {
+        return priorityA - priorityB;
+      }
+      
+      // If priority is the same, sort by most recent
+      return (new Date(b.publishedAt || 0).getTime()) - (new Date(a.publishedAt || 0).getTime());
+    });
   const nonFeaturedPublications = displayedPublications.filter(pub => pub.featured !== "true");
 
   // Sort categories by custom order

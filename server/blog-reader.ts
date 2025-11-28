@@ -10,6 +10,7 @@ interface BlogMetadata {
   readTime: string;
   published: boolean;
   publishedAt: string;
+  image?: string;
 }
 
 export class BlogReader {
@@ -45,6 +46,7 @@ export class BlogReader {
         readTime: metadata.readTime,
         published: metadata.published ? "true" : "false",
         publishedAt: new Date(metadata.publishedAt),
+        imageUrl: metadata.image || null,
         createdAt: new Date(metadata.publishedAt),
       };
     } catch (error) {
@@ -109,6 +111,9 @@ export class BlogReader {
             break;
           case 'publishedAt':
             metadata.publishedAt = value;
+            break;
+          case 'image':
+            metadata.image = value;
             break;
         }
       }

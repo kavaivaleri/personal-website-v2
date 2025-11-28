@@ -80,6 +80,18 @@ export default function BlogPostPage() {
           </Button>
         </Link>
 
+        {/* Cover Image */}
+        {post.imageUrl && (
+          <div className="mb-8 rounded-lg overflow-hidden shadow-pixel">
+            <img
+              src={post.imageUrl}
+              alt={post.title}
+              className="w-full h-auto max-h-96 object-cover"
+              loading="lazy"
+            />
+          </div>
+        )}
+
         {/* Post Header */}
         <div className="bg-white rounded-lg shadow-pixel p-8 mb-8">
           <h1 className="text-4xl font-bold text-pixel-dark mb-6">{post.title}</h1>

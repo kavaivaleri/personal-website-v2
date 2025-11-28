@@ -5,7 +5,7 @@ url: "https://learnprompting.org/blog/how-to-use-openai-canvas-chatgpt"
 publication: "Learn Prompting"
 category: "Listicle"
 publishedAt: "2025-09-03"
-featured: true
+featured: false
 readTime: "1 min read"
 ---
 

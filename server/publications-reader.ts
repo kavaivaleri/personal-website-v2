@@ -11,6 +11,7 @@ interface PublicationMetadata {
   category: string;
   publishedAt: string;
   featured: boolean;
+  priority?: string;
   readTime?: string;
   imageUrl?: string;
 }
@@ -58,6 +59,7 @@ export class PublicationsReader {
         category: metadata.category,
         publishedAt: new Date(metadata.publishedAt),
         featured: metadata.featured ? "true" : "false",
+        priority: metadata.priority || null,
         readTime: metadata.readTime || null,
         imageUrl,
         createdAt: new Date(metadata.publishedAt),
@@ -119,6 +121,9 @@ export class PublicationsReader {
           case 'featured':
             metadata.featured = value === 'true';
             break;
+          case 'priority':
+            metadata.priority = value;
+            break;
           case 'readTime':
             metadata.readTime = value;
             break;
@@ -166,7 +171,20 @@ export class PublicationsReader {
 
   async getFeaturedPublications(): Promise<Publication[]> {
     const publications = await this.getAllPublications();
-    return publications.filter(pub => pub.featured === "true");
+    const featured = publications.filter(pub => pub.featured === "true");
+    
+    // Sort by priority (lower number = higher priority), then by publishedAt
+    return featured.sort((a, b) => {
+      const priorityA = a.priority ? parseInt(a.priority, 10) : 999;
+      const priorityB = b.priority ? parseInt(b.priority, 10) : 999;
+      
+      if (priorityA !== priorityB) {
+        return priorityA - priorityB;
+      }
+      
+      // If priority is the same, sort by most recent
+      return (b.publishedAt?.getTime() || 0) - (a.publishedAt?.getTime() || 0);
+    });
   }
 
   async getPublicationsByCategory(category: string): Promise<Publication[]> {

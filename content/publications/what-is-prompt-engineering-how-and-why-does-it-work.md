@@ -5,7 +5,7 @@ url: "https://learnprompting.org/blog/what-is-prompt-engineering"
 publication: "Learn Prompting"
 category: "Guide, Prompt Engineering"
 publishedAt: "2025-09-03"
-featured: true
+featured: false
 readTime: "1 min read"
 ---
 

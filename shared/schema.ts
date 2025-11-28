@@ -27,6 +27,7 @@ export const blogPosts = pgTable("blog_posts", {
   readTime: text("read_time").notNull(),
   published: text("published").default("true"),
   publishedAt: timestamp("published_at").defaultNow(),
+  imageUrl: text("image_url"), // Cover image URL
   createdAt: timestamp("created_at").defaultNow(),
 });
 
@@ -58,6 +59,7 @@ export const publications = pgTable("publications", {
   category: text("category").notNull(), // e.g., "Technical Writing", "AI/ML"
   publishedAt: timestamp("published_at").notNull(),
   featured: text("featured").default("false"), // "true" or "false"
+  priority: text("priority"), // Lower number = higher priority (1, 2, 3, etc.)
   readTime: text("read_time"),
   imageUrl: text("image_url"), // Cover image URL
   createdAt: timestamp("created_at").defaultNow(),

@@ -1,12 +1,11 @@
 ---
 title: "The Mysterious AI Reading List: Ilya Sutskever's Recommendations"
-description: "Authored analysis of Ilya Sutskever's influential AI reading list, exploring key papers and their impact on modern AI research."
+description: "A piece on the elusive AI reading list Ilya Sutskever reportedly gave John Carmack, tracing the origin of this “90% of what matters today” claim and how the unseen ~40-paper list became a legend in the ML community."
 url: "https://www.turingpost.com/p/ilya-sutskever-reading-list"
 publication: "Turing Post"
 category: "Listicle"
 publishedAt: "2024-05-19"
 featured: true
+priority: "82"
 readTime: "9 min read"
 ---
-
-Deep dive into the seminal papers recommended by OpenAI's co-founder, explaining why each research work is essential for understanding modern AI.

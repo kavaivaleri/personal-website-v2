@@ -1,12 +1,11 @@
 ---
 title: "Transformer and Diffusion-Based Foundation Models"
-description: "Co-authored comparative analysis of Transformer and Diffusion architectures as foundation models, exploring their strengths and applications."
+description: "Authored the technical sections on Transformer-based and Diffusion-based models and conducted research on generative model architectures to trace the origins of diffusion models; other generative models aren't covered due to space constraints."
 url: "https://www.turingpost.com/p/transformerdiffusion"
 publication: "Turing Post"
 category: "Technical"
 publishedAt: "2023-10-26"
 featured: true
+priority: "21"
 readTime: "14 min read"
 ---
-
-Comprehensive comparison of two dominant foundation model architectures, their mathematical foundations, and optimal use cases in modern AI applications.
