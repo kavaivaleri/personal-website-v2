@@ -14,15 +14,9 @@
     ],
     "readTime": "2 min read",
     "published": "true",
-<<<<<<< HEAD
     "publishedAt": "2025-11-28",
     "imageUrl": null,
     "createdAt": "2025-11-28"
-=======
-    "publishedAt": "2025-11-28T00:00:00.000Z",
-    "imageUrl": null,
-    "createdAt": "2025-11-28T00:00:00.000Z"
->>>>>>> d547dbf3fbe49807e383cc64880737bf58d57073
   },
   {
     "id": "do-i-use-ai",
@@ -37,15 +31,9 @@
     ],
     "readTime": "2 min read",
     "published": "true",
-<<<<<<< HEAD
     "publishedAt": "2025-11-28",
     "imageUrl": "/images/blog/laptop.png",
     "createdAt": "2025-11-28"
-=======
-    "publishedAt": "2025-11-28T00:00:00.000Z",
-    "imageUrl": "/images/blog/laptop.png",
-    "createdAt": "2025-11-28T00:00:00.000Z"
->>>>>>> d547dbf3fbe49807e383cc64880737bf58d57073
   },
   {
     "id": "how-i-started-learning-how-websites-work-and-how-ai-helped",
@@ -62,7 +50,6 @@
     ],
     "readTime": "2 min read",
     "published": "true",
-<<<<<<< HEAD
     "publishedAt": "2025-11-28",
     "imageUrl": "/images/blog/laptop.png",
     "createdAt": "2025-11-28"
@@ -84,10 +71,5 @@
     "publishedAt": "2025-11-28",
     "imageUrl": "/images/blog/laptop.png",
     "createdAt": "2025-11-28"
-=======
-    "publishedAt": "2025-11-28T00:00:00.000Z",
-    "imageUrl": "/images/blog/laptop.png",
-    "createdAt": "2025-11-28T00:00:00.000Z"
->>>>>>> d547dbf3fbe49807e383cc64880737bf58d57073
   }
 ]
