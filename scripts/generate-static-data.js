@@ -1,4 +1,4 @@
-import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'fs';
+import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync, cpSync } from 'fs';
 import { join } from 'path';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
@@ -6,6 +6,30 @@ import { dirname } from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const rootDir = join(__dirname, '..');
+
+// Sync images from root public folder to client public folder
+function syncImages() {
+  const rootImagesDir = join(rootDir, 'public', 'images');
+  const clientImagesDir = join(rootDir, 'client', 'public', 'images');
+  
+  if (!existsSync(rootImagesDir)) {
+    console.warn('⚠️  Root images directory not found');
+    return;
+  }
+  
+  // Ensure client images directory exists
+  if (!existsSync(clientImagesDir)) {
+    mkdirSync(clientImagesDir, { recursive: true });
+  }
+  
+  // Copy all images recursively
+  try {
+    cpSync(rootImagesDir, clientImagesDir, { recursive: true, force: true });
+    console.log('✅ Images synced from public/images to client/public/images');
+  } catch (error) {
+    console.error('⚠️  Error syncing images:', error.message);
+  }
+}
 
 function parseFrontmatter(content) {
   if (!content.startsWith('---')) {
@@ -189,6 +213,9 @@ function readAboutInfo() {
     };
   }
 }
+
+// Sync images first
+syncImages();
 
 // Generate static data files
 const outputDir = join(rootDir, 'client', 'public', 'api');

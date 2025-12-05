@@ -37,7 +37,6 @@ That alone was a great learning experience.
   <figcaption>Girly Version To-Do View</figcaption>
 </figure>
 
-
 Then I started experimenting a bit more and created a girly-pixelated version (pushed to the extreme 😂🌸) with a calendar view and repeated tasks.
 
 <figure>

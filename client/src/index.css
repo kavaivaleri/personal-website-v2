@@ -170,6 +170,18 @@
     @apply bg-transparent px-0 py-0;
   }
 
+  .markdown-content figure {
+    @apply my-6;
+  }
+
+  .markdown-content figure img {
+    @apply w-full h-auto rounded-lg shadow-md;
+  }
+
+  .markdown-content figcaption {
+    @apply text-sm text-gray-600 italic mt-2 text-center;
+  }
+
   /* Smooth transitions */
   .transition-pixel {
     transition: all 0.2s ease;
