@@ -41,7 +41,7 @@ That alone was a great learning experience.
 Then I started experimenting a bit more and created a girly-pixelated version (pushed to the extreme 😂🌸) with a calendar view and repeated tasks.
 
 <figure>
-  <img src="/images/blog/girly-version-task-view.png" alt="Girly Version Task View" />
+  <img src="/images/blog/girly-version-task.png" alt="Girly Version Task View" />
   <figcaption>Girly Version Task View</figcaption>
 </figure>
 
