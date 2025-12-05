@@ -14,7 +14,7 @@ export default function PublicationsGrid({ limit, featured = false }: Publicatio
   const { data: publications = [], isLoading } = useQuery<Publication[]>({
     queryKey: featured ? ["/api/publications/featured"] : ["/api/publications"],
     queryFn: async () => {
-      const endpoint = featured ? "/api/publications/featured" : "/api/publications";
+      const endpoint = featured ? "/api/publications/featured.json" : "/api/publications.json";
       const response = await fetch(endpoint);
       if (!response.ok) throw new Error("Failed to fetch publications");
       return response.json();

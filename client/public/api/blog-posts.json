@@ -1,0 +1,75 @@
+[
+  {
+    "id": "django-todo-app-first-impressions",
+    "title": "Django To-Do App First Impressions: Module 1 at AI Dev Tools Zoomcamp",
+    "slug": "django-todo-app-first-impressions",
+    "excerpt": "Building my first Django app with zero prior experience, using AI tools to scaffold a working TODO app in 10 minutes, experimenting with custom interfaces, and learning by reverse-engineering the generated code.",
+    "content": "I [decided to join AI DevTools Zoomcamp](/blog/do-i-use-ai) and was genuinely curious what I'd be able to build.\n\nIn the first module of the course, we build a TODO app using the Django framework.\n\nSide note:\nI knew *nothing* about Django before starting the course.\n\nFor someone who doesn't come from a classic software engineering background, AI tools are a huge unlock. They don't magically make you a senior developer overnight, but they *do* lower the barrier so you can build real projects, see how things work under the hood, and learn by doing.\n\nInsane, but: It took about 10 minutes for Cursor to scaffold a working Django TODO app. I followed the homework instructions, asked the AI to build the project, and watched it piece everything together.\n\nWhile the model was generating code, I tried to reverse-engineer what it was doing:\n\n- Django app structure\n- Component connections\n- File responsibilities\n\nThat alone was a great learning experience.\n\nThen I started experimenting a bit more and created a girly-pixelated version (pushed to the extreme 😂🌸) with a calendar view and repeated tasks. It definitely needs work (the font is unreadable and repeating events don't actually repeat yet). But it was a fun way to explore how far I could push the interface with AI assistance.\n\nOverall, I had a lot of fun with this module!\n\nNot sure if I \"built\" it or \"watched it build itself,\" but both felt equally fascinating.",
+    "tags": [
+      "AI Tools",
+      "Django",
+      "Learning",
+      "Development",
+      "Web Development"
+    ],
+    "readTime": "2 min read",
+    "published": "true",
+    "publishedAt": "2025-11-28",
+    "imageUrl": null,
+    "createdAt": "2025-11-28"
+  },
+  {
+    "id": "do-i-use-ai",
+    "title": "Do I Use AI? And Striving to Expand Existing Workflows",
+    "slug": "do-i-use-ai",
+    "excerpt": "My goals for joining the AI Dev Tools Zoomcamp",
+    "content": "**\"Are you actually using AI in your everyday life?\"**\n\nShort answer: yes. A lot.\n\nI started using AI tools around the time ChatGPT first came out. Back then, I mainly used it as a marketer: small content edits, alternative headlines, structure suggestions. It was helpful, but also quite limited and prone to obvious errors.\n\nFast-forward to today: the tools are much more powerful, but one thing hasn't changed — I still treat AI as a **companion**, not a full replacement. Even if you hire a human, you still review their work. Same with AI: it can speed you up, but you stay responsible for the final output.\n\nBecause I work in startup environments and often wear \"technical\" hats (think technical SEO, website updates, landing pages), I decided to lean into this and invest in my skills. I joined **AI Dev Tools Zoomcamp**, a course that teaches developers to work more productively with AI: coding assistants, agents, automation tools, all of that.\n\nI already use AI to:\n\n- Draft and iterate on landing pages\n- Generate small scripts for technical SEO (for example, adding or updating structured data)\n- Experiment with how websites are built and styled, using AI to suggest code changes and then reverse-engineering what happened\n\nOn AI Dev Tools Zoomcamp, the module that interests me the most is [building an AI coding agent](https://github.com/DataTalksClub/ai-dev-tools-zoomcamp/tree/main/04-build-coding-agent). I hope it will help me understand how agents are built and how I can use them in my work. Since I've already tried using LLMs with an API, I'm curious how agentic features can expand their capabilities and what I would be able to build with them.",
+    "tags": [
+      "AI Tools",
+      "Learning",
+      "Career Development"
+    ],
+    "readTime": "2 min read",
+    "published": "true",
+    "publishedAt": "2025-11-28",
+    "imageUrl": "/images/blog/laptop.png",
+    "createdAt": "2025-11-28"
+  },
+  {
+    "id": "how-i-started-learning-how-websites-work-and-how-ai-helped",
+    "title": "How I Started Learning How Websites Work (And How AI Helped)",
+    "slug": "how-i-started-learning-how-websites-work-and-how-ai-helped",
+    "excerpt": "As a content manager, I discovered that understanding how websites actually work transformed my work—and AI tools like Cursor became my gateway to learning the technical side of content management.",
+    "content": "When I joined Learn Prompting, the onboarding wasn't the usual \"upload content into a CMS.\"\n\nI had to learn GitHub, work directly with a Next.js codebase, and contribute articles through pull requests. For many marketers this setup feels intimidating — *\"too technical,\" \"not for me,\"* — but I was genuinely excited to dive in.\n\nEditing content inside a repo, pushing changes, understanding the folder structure, seeing how components work… it immediately clicked for me. It felt like a natural extension of working with technical material every day.\n\nOver time I started exploring the internals of the website on my own. Step by step. Small changes. Reading code. Breaking things and fixing them. Then one day Feddy introduced me to **Cursor** — and that changed everything.\n\nCursor became my sandbox for reverse-engineering how websites work:\n\n- Ask the AI to generate a change\n- Inspect what it touched\n- See how that impacted the final page\n- Learn the pattern\n- Apply it intentionally next time\n\nHalf a year later, this tool has fundamentally reshaped how I work. I've used it to implement SEO improvements, understand how components are wired together, and even write small scripts to automate technical SEO edits across multiple files. More about it in another post.\n\nFor some marketers, a \"GitHub + Next.js + AI-assisted reverse engineering\" workflow would be a hard no.\nFor me, it became one of the most interesting parts of the job — and now I'm applying the same skills in my current role to push things even further.",
+    "tags": [
+      "AI Tools",
+      "Learning",
+      "Content Strategy",
+      "Workflow",
+      "Career Development"
+    ],
+    "readTime": "2 min read",
+    "published": "true",
+    "publishedAt": "2025-11-28",
+    "imageUrl": "/images/blog/laptop.png",
+    "createdAt": "2025-11-28"
+  },
+  {
+    "id": "how-to-build-simple-django-to-do-app",
+    "title": "How to Build a Simple Django To-Do App",
+    "slug": "how-to-build-simple-django-to-do-app",
+    "excerpt": "In this tutorial, I'll show you how to build a simple Django to-do app from scratch. We'll cover the key aspects of Django apps and your first steps to get a simple but working app on the example of a to-do app.",
+    "content": "In one of my recent posts, I shared my first impressions about building a simple Django to-do app using AI tools.\n\nBased on the things I've learned through this process, I've decided to write a tutorial that will serve as an intro to Django for beginners and cover the key aspects of Django apps and your first steps to get a simple but working app on the example of a to-do app.\n\n## Install Django\n\nThere can be multiple ways to install Django, but I'll use the official way to install it using `pip`.\n\n```bash\npip install django\n```\n\nYou can verify installation by running:\n```bash\npython -m django --version\n```\n\n## Create a new Django project\n\n```bash\ndjango-admin startproject myproject\n```\n\n## Create Django project\n## Create Django app for TODOs\n## Create TODO model with fields (title, description, due_date, is_resolved)\n## Create and run migrations\n## Register TODO model in admin for CRUD operations\n## Create views and URLs for create, edit, delete, and mark as resolved\n## Create templates for the TODO interface",
+    "tags": [
+      "Django",
+      "Learning",
+      "Development",
+      "Web Development"
+    ],
+    "readTime": "2 min read",
+    "published": "true",
+    "publishedAt": "2025-11-28",
+    "imageUrl": "/images/blog/laptop.png",
+    "createdAt": "2025-11-28"
+  }
+]

@@ -18,11 +18,23 @@ interface AboutInfo {
 }
 
 async function fetchAboutInfo(): Promise<AboutInfo> {
-  const response = await fetch("/api/about");
+  const response = await fetch("/api/about.json");
   if (!response.ok) {
     throw new Error("Failed to fetch about information");
   }
-  return response.json();
+  const data = await response.json();
+  // Transform the data to match the expected structure
+  return {
+    metadata: {
+      name: data.name || '',
+      title: data.title || '',
+      email: data.email || '',
+      location: data.location || '',
+      linkedin: data.linkedin || '',
+      twitter: data.twitter || '',
+    },
+    content: data.content || '',
+  };
 }
 
 export default function About() {
