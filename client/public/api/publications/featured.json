@@ -6,12 +6,20 @@
     "url": "https://www.turingpost.com/p/jepa",
     "publication": "Turing Post",
     "category": "Technical",
+<<<<<<< HEAD
     "publishedAt": "2024-06-13",
+=======
+    "publishedAt": "2024-06-13T00:00:00.000Z",
+>>>>>>> d547dbf3fbe49807e383cc64880737bf58d57073
     "featured": "true",
     "priority": "10",
     "readTime": "12 min read",
     "imageUrl": null,
+<<<<<<< HEAD
     "createdAt": "2024-06-13"
+=======
+    "createdAt": "2024-06-13T00:00:00.000Z"
+>>>>>>> d547dbf3fbe49807e383cc64880737bf58d57073
   },
   {
     "id": "what-is-retrieval-augmented-generation-rag",
@@ -20,12 +28,20 @@
     "url": "https://www.turingpost.com/p/rag",
     "publication": "Turing Post",
     "category": "Technical",
+<<<<<<< HEAD
     "publishedAt": "2023-10-05",
+=======
+    "publishedAt": "2023-10-05T00:00:00.000Z",
+>>>>>>> d547dbf3fbe49807e383cc64880737bf58d57073
     "featured": "true",
     "priority": "20",
     "readTime": "13 min read",
     "imageUrl": null,
+<<<<<<< HEAD
     "createdAt": "2023-10-05"
+=======
+    "createdAt": "2023-10-05T00:00:00.000Z"
+>>>>>>> d547dbf3fbe49807e383cc64880737bf58d57073
   },
   {
     "id": "transformer-and-diffusion-based-foundation-models",
@@ -34,12 +50,20 @@
     "url": "https://www.turingpost.com/p/transformerdiffusion",
     "publication": "Turing Post",
     "category": "Technical",
+<<<<<<< HEAD
     "publishedAt": "2023-10-26",
+=======
+    "publishedAt": "2023-10-26T00:00:00.000Z",
+>>>>>>> d547dbf3fbe49807e383cc64880737bf58d57073
     "featured": "true",
     "priority": "21",
     "readTime": "14 min read",
     "imageUrl": null,
+<<<<<<< HEAD
     "createdAt": "2023-10-26"
+=======
+    "createdAt": "2023-10-26T00:00:00.000Z"
+>>>>>>> d547dbf3fbe49807e383cc64880737bf58d57073
   },
   {
     "id": "what-is-mixture-of-experts-moe",
@@ -48,12 +72,20 @@
     "url": "https://www.turingpost.com/p/moe",
     "publication": "Turing Post",
     "category": "Technical",
+<<<<<<< HEAD
     "publishedAt": "2024-05-25",
+=======
+    "publishedAt": "2024-05-25T00:00:00.000Z",
+>>>>>>> d547dbf3fbe49807e383cc64880737bf58d57073
     "featured": "true",
     "priority": "30",
     "readTime": "14 min read",
     "imageUrl": null,
+<<<<<<< HEAD
     "createdAt": "2024-05-25"
+=======
+    "createdAt": "2024-05-25T00:00:00.000Z"
+>>>>>>> d547dbf3fbe49807e383cc64880737bf58d57073
   },
   {
     "id": "graphrag",
@@ -62,12 +94,20 @@
     "url": "https://www.turingpost.com/p/graphrag",
     "publication": "Turing Post",
     "category": "Technical",
+<<<<<<< HEAD
     "publishedAt": "2024-06-06",
+=======
+    "publishedAt": "2024-06-06T00:00:00.000Z",
+>>>>>>> d547dbf3fbe49807e383cc64880737bf58d57073
     "featured": "true",
     "priority": "31",
     "readTime": "15 min read",
     "imageUrl": null,
+<<<<<<< HEAD
     "createdAt": "2024-06-06"
+=======
+    "createdAt": "2024-06-06T00:00:00.000Z"
+>>>>>>> d547dbf3fbe49807e383cc64880737bf58d57073
   },
   {
     "id": "what-is-longrag-framework",
@@ -76,12 +116,20 @@
     "url": "https://www.turingpost.com/p/longrag",
     "publication": "Turing Post",
     "category": "Technical",
+<<<<<<< HEAD
     "publishedAt": "2024-06-06",
+=======
+    "publishedAt": "2024-06-06T00:00:00.000Z",
+>>>>>>> d547dbf3fbe49807e383cc64880737bf58d57073
     "featured": "true",
     "priority": "32",
     "readTime": "10 min read",
     "imageUrl": null,
+<<<<<<< HEAD
     "createdAt": "2024-06-06"
+=======
+    "createdAt": "2024-06-06T00:00:00.000Z"
+>>>>>>> d547dbf3fbe49807e383cc64880737bf58d57073
   },
   {
     "id": "what-is-ai-red-teaming",
@@ -90,12 +138,20 @@
     "url": "https://learnprompting.org/blog/what-is-ai-red-teaming",
     "publication": "Learn Prompting",
     "category": "Guide, AI Safety",
+<<<<<<< HEAD
     "publishedAt": "2025-09-03",
+=======
+    "publishedAt": "2025-09-03T00:00:00.000Z",
+>>>>>>> d547dbf3fbe49807e383cc64880737bf58d57073
     "featured": "true",
     "priority": "40",
     "readTime": "1 min read",
     "imageUrl": null,
+<<<<<<< HEAD
     "createdAt": "2025-09-03"
+=======
+    "createdAt": "2025-09-03T00:00:00.000Z"
+>>>>>>> d547dbf3fbe49807e383cc64880737bf58d57073
   },
   {
     "id": "understanding-fun-tuning-how-researchers-found-a-new-way-to-hack-ai-models",
@@ -104,12 +160,20 @@
     "url": "https://learnprompting.org/blog/fun-tuning-prompt-hacking-gemini-by-exploiting-gemini-free-api",
     "publication": "Learn Prompting",
     "category": "Guide, AI Safety",
+<<<<<<< HEAD
     "publishedAt": "2025-09-03",
+=======
+    "publishedAt": "2025-09-03T00:00:00.000Z",
+>>>>>>> d547dbf3fbe49807e383cc64880737bf58d57073
     "featured": "true",
     "priority": "41",
     "readTime": "1 min read",
     "imageUrl": null,
+<<<<<<< HEAD
     "createdAt": "2025-09-03"
+=======
+    "createdAt": "2025-09-03T00:00:00.000Z"
+>>>>>>> d547dbf3fbe49807e383cc64880737bf58d57073
   },
   {
     "id": "hacking-chatgpts-memory-system-using-prompt-injection",
@@ -118,12 +182,20 @@
     "url": "https://learnprompting.org/blog/prompt-injection-hacking-chatgpt-memories",
     "publication": "Learn Prompting",
     "category": "Guide, AI Safety",
+<<<<<<< HEAD
     "publishedAt": "2025-09-03",
+=======
+    "publishedAt": "2025-09-03T00:00:00.000Z",
+>>>>>>> d547dbf3fbe49807e383cc64880737bf58d57073
     "featured": "true",
     "priority": "42",
     "readTime": "1 min read",
     "imageUrl": null,
+<<<<<<< HEAD
     "createdAt": "2025-09-03"
+=======
+    "createdAt": "2025-09-03T00:00:00.000Z"
+>>>>>>> d547dbf3fbe49807e383cc64880737bf58d57073
   },
   {
     "id": "there-would-have-been-no-llms-without-this-history-of-llms-3",
@@ -132,12 +204,20 @@
     "url": "https://www.turingpost.com/p/llmshistory3",
     "publication": "Turing Post",
     "category": "History",
+<<<<<<< HEAD
     "publishedAt": "2023-07-07",
+=======
+    "publishedAt": "2023-07-07T00:00:00.000Z",
+>>>>>>> d547dbf3fbe49807e383cc64880737bf58d57073
     "featured": "true",
     "priority": "50",
     "readTime": "15 min read",
     "imageUrl": null,
+<<<<<<< HEAD
     "createdAt": "2023-07-07"
+=======
+    "createdAt": "2023-07-07T00:00:00.000Z"
+>>>>>>> d547dbf3fbe49807e383cc64880737bf58d57073
   },
   {
     "id": "a-deep-dive-into-llama",
@@ -146,12 +226,20 @@
     "url": "https://www.turingpost.com/p/top3llmsope",
     "publication": "Turing Post",
     "category": "Technical",
+<<<<<<< HEAD
     "publishedAt": "2023-07-28",
+=======
+    "publishedAt": "2023-07-28T00:00:00.000Z",
+>>>>>>> d547dbf3fbe49807e383cc64880737bf58d57073
     "featured": "true",
     "priority": "51",
     "readTime": "15 min read",
     "imageUrl": null,
+<<<<<<< HEAD
     "createdAt": "2023-07-28"
+=======
+    "createdAt": "2023-07-28T00:00:00.000Z"
+>>>>>>> d547dbf3fbe49807e383cc64880737bf58d57073
   },
   {
     "id": "how-to-leverage-open-source-llms-in-your-project",
@@ -160,12 +248,20 @@
     "url": "https://www.turingpost.com/p/practicalllms",
     "publication": "Turing Post",
     "category": "Technical",
+<<<<<<< HEAD
     "publishedAt": "2023-08-04",
+=======
+    "publishedAt": "2023-08-04T00:00:00.000Z",
+>>>>>>> d547dbf3fbe49807e383cc64880737bf58d57073
     "featured": "true",
     "priority": "52",
     "readTime": "13 min read",
     "imageUrl": null,
+<<<<<<< HEAD
     "createdAt": "2023-08-04"
+=======
+    "createdAt": "2023-08-04T00:00:00.000Z"
+>>>>>>> d547dbf3fbe49807e383cc64880737bf58d57073
   },
   {
     "id": "from-chain-of-thoughts-to-skeleton-of-thoughts",
@@ -174,12 +270,20 @@
     "url": "https://www.turingpost.com/p/cot",
     "publication": "Turing Post",
     "category": "Technical",
+<<<<<<< HEAD
     "publishedAt": "2023-10-18",
+=======
+    "publishedAt": "2023-10-18T00:00:00.000Z",
+>>>>>>> d547dbf3fbe49807e383cc64880737bf58d57073
     "featured": "true",
     "priority": "60",
     "readTime": "12 min read",
     "imageUrl": null,
+<<<<<<< HEAD
     "createdAt": "2023-10-18"
+=======
+    "createdAt": "2023-10-18T00:00:00.000Z"
+>>>>>>> d547dbf3fbe49807e383cc64880737bf58d57073
   },
   {
     "id": "prompt-engineering-vs-fine-tuning-how-to-choose-the-right-approach-for-your-needs",
@@ -188,12 +292,20 @@
     "url": "https://learnprompting.org/blog/prompt-engineering-vs-fine-tuning",
     "publication": "Learn Prompting",
     "category": "Guide, Prompt Engineering",
+<<<<<<< HEAD
     "publishedAt": "2025-09-03",
+=======
+    "publishedAt": "2025-09-03T00:00:00.000Z",
+>>>>>>> d547dbf3fbe49807e383cc64880737bf58d57073
     "featured": "true",
     "priority": "61",
     "readTime": "1 min read",
     "imageUrl": null,
+<<<<<<< HEAD
     "createdAt": "2025-09-03"
+=======
+    "createdAt": "2025-09-03T00:00:00.000Z"
+>>>>>>> d547dbf3fbe49807e383cc64880737bf58d57073
   },
   {
     "id": "llm-parameters-explained-a-practical-guide-with-examples-for-openai-api-in-python",
@@ -202,12 +314,20 @@
     "url": "https://learnprompting.org/blog/llm-parameters",
     "publication": "Learn Prompting",
     "category": "Guide, Prompt Engineering",
+<<<<<<< HEAD
     "publishedAt": "2025-09-03",
+=======
+    "publishedAt": "2025-09-03T00:00:00.000Z",
+>>>>>>> d547dbf3fbe49807e383cc64880737bf58d57073
     "featured": "true",
     "priority": "62",
     "readTime": "1 min read",
     "imageUrl": null,
+<<<<<<< HEAD
     "createdAt": "2025-09-03"
+=======
+    "createdAt": "2025-09-03T00:00:00.000Z"
+>>>>>>> d547dbf3fbe49807e383cc64880737bf58d57073
   },
   {
     "id": "what-is-low-rank-adaptation-lora",
@@ -216,12 +336,20 @@
     "url": "https://www.turingpost.com/p/lora",
     "publication": "Turing Post",
     "category": "Technical",
+<<<<<<< HEAD
     "publishedAt": "2023-11-30",
+=======
+    "publishedAt": "2023-11-30T00:00:00.000Z",
+>>>>>>> d547dbf3fbe49807e383cc64880737bf58d57073
     "featured": "true",
     "priority": "70",
     "readTime": "9 min read",
     "imageUrl": null,
+<<<<<<< HEAD
     "createdAt": "2023-11-30"
+=======
+    "createdAt": "2023-11-30T00:00:00.000Z"
+>>>>>>> d547dbf3fbe49807e383cc64880737bf58d57073
   },
   {
     "id": "what-are-hallucinations",
@@ -230,12 +358,20 @@
     "url": "https://www.turingpost.com/p/hallucination",
     "publication": "Turing Post",
     "category": "Technical",
+<<<<<<< HEAD
     "publishedAt": "2024-01-04",
+=======
+    "publishedAt": "2024-01-04T00:00:00.000Z",
+>>>>>>> d547dbf3fbe49807e383cc64880737bf58d57073
     "featured": "true",
     "priority": "71",
     "readTime": "18 min read",
     "imageUrl": null,
+<<<<<<< HEAD
     "createdAt": "2024-01-04"
+=======
+    "createdAt": "2024-01-04T00:00:00.000Z"
+>>>>>>> d547dbf3fbe49807e383cc64880737bf58d57073
   },
   {
     "id": "how-to-handle-missing-values",
@@ -244,12 +380,20 @@
     "url": "https://www.turingpost.com/p/missingvalues",
     "publication": "Turing Post",
     "category": "Technical",
+<<<<<<< HEAD
     "publishedAt": "2023-09-07",
+=======
+    "publishedAt": "2023-09-07T00:00:00.000Z",
+>>>>>>> d547dbf3fbe49807e383cc64880737bf58d57073
     "featured": "true",
     "priority": "72",
     "readTime": "9 min read",
     "imageUrl": null,
+<<<<<<< HEAD
     "createdAt": "2023-09-07"
+=======
+    "createdAt": "2023-09-07T00:00:00.000Z"
+>>>>>>> d547dbf3fbe49807e383cc64880737bf58d57073
   },
   {
     "id": "algorithm-or-personality-the-significance-of-anthropomorphism-in-ai",
@@ -258,12 +402,20 @@
     "url": "https://www.turingpost.com/p/anthropomorphisminai",
     "publication": "Turing Post",
     "category": "Technical",
+<<<<<<< HEAD
     "publishedAt": "2023-05-31",
+=======
+    "publishedAt": "2023-05-31T00:00:00.000Z",
+>>>>>>> d547dbf3fbe49807e383cc64880737bf58d57073
     "featured": "true",
     "priority": "80",
     "readTime": "12 min read",
     "imageUrl": null,
+<<<<<<< HEAD
     "createdAt": "2023-05-31"
+=======
+    "createdAt": "2023-05-31T00:00:00.000Z"
+>>>>>>> d547dbf3fbe49807e383cc64880737bf58d57073
   },
   {
     "id": "gpt-4o-image-generation-a-complete-guide-12-prompt-examples",
@@ -272,12 +424,20 @@
     "url": "https://learnprompting.org/blog/guide-openai-4o-image-generation",
     "publication": "Learn Prompting",
     "category": "Guide, AI Tools",
+<<<<<<< HEAD
     "publishedAt": "2025-09-03",
+=======
+    "publishedAt": "2025-09-03T00:00:00.000Z",
+>>>>>>> d547dbf3fbe49807e383cc64880737bf58d57073
     "featured": "true",
     "priority": "81",
     "readTime": "1 min read",
     "imageUrl": null,
+<<<<<<< HEAD
     "createdAt": "2025-09-03"
+=======
+    "createdAt": "2025-09-03T00:00:00.000Z"
+>>>>>>> d547dbf3fbe49807e383cc64880737bf58d57073
   },
   {
     "id": "the-mysterious-ai-reading-list-ilya-sutskevers-recommendations",
@@ -286,11 +446,19 @@
     "url": "https://www.turingpost.com/p/ilya-sutskever-reading-list",
     "publication": "Turing Post",
     "category": "Listicle",
+<<<<<<< HEAD
     "publishedAt": "2024-05-19",
+=======
+    "publishedAt": "2024-05-19T00:00:00.000Z",
+>>>>>>> d547dbf3fbe49807e383cc64880737bf58d57073
     "featured": "true",
     "priority": "82",
     "readTime": "9 min read",
     "imageUrl": null,
+<<<<<<< HEAD
     "createdAt": "2024-05-19"
+=======
+    "createdAt": "2024-05-19T00:00:00.000Z"
+>>>>>>> d547dbf3fbe49807e383cc64880737bf58d57073
   }
 ]

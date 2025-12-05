@@ -76,8 +76,8 @@ export default function Publications() {
     return acc;
   }, {} as Record<string, Publication[]>);
 
-  // Group by publication source
-  const publicationSources = Array.from(new Set(publications.map(pub => pub.publication)));
+  // Group by publication source - use displayedPublications to reflect search filter
+  const publicationSources = Array.from(new Set(displayedPublications.map(pub => pub.publication)));
 
   if (isLoading) {
     return (
@@ -131,7 +131,7 @@ export default function Publications() {
       {/* Stats */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
         <div className="p-6 border rounded-lg">
-          <div className="text-2xl font-bold">{publications.length}</div>
+          <div className="text-2xl font-bold">{displayedPublications.length}</div>
           <div className="text-sm text-muted-foreground">Total Articles</div>
         </div>
         <div className="p-6 border rounded-lg">
